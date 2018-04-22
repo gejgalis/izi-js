@@ -60,3 +60,8 @@ export function inject (beanIdOrType: BeanIdentity): Injection {
   }
   return new Injection(beanIdOrType)
 }
+
+/**
+ * Contains definitions of decorators
+ */
+export { Destroy, Init, Inject } from './ioc/decorators'

@@ -37,3 +37,7 @@ export declare function lazy(clazz: ClassConstructor | Function): Config;
  * property dependency injection.
  */
 export declare function inject(beanIdOrType: BeanIdentity): Injection;
+/**
+ * Contains definitions of decorators
+ */
+export { Destroy, Init, Inject } from './ioc/decorators';

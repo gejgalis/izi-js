@@ -29,3 +29,8 @@ export declare type AnyArgs = any[];
 export interface ClassConstructor {
     new (...args: AnyArgs): any;
 }
+export interface DecoratorInjectionConfig {
+    property?: string;
+    through?(dependency: any): any;
+    by?(target: Element, prop: string, dependency: any): void;
+}
